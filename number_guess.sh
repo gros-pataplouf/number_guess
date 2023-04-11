@@ -15,7 +15,6 @@ else
   echo Welcome, $USERNAME! It looks like this is your first time here.
   INSERT_RESULT=$($PSQL "INSERT INTO users(username) VALUES('$USERNAME')")
 fi
-echo $RANDOM_NUMBER
 echo Guess the secret number between 1 and 1000:
 read GUESS
 TOTAL_GUESSES=1
